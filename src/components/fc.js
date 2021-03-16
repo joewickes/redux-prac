@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Fc = () => {
   const [something, setSomething] = useState('b');
+
+  useEffect(() => {
+    console.log(something);
+  })
 
   return (
     <>
